@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fix-width{
+    width: 1300px;
+    margin: auto;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.hedder{
+   height: 80px; 
+   width: 100%;
+   background-color: rgba(0, 0, 0,.8);
+   
+}
+.hedder-img{
+    width: 40%;
+}
+.hedder-content{
+    width: 60%;
+    text-align: right;
+}
+/* ::before{
+    content: "";
+    border-bottom: 2px solid burlywood;
+    background-color: rgba(229, 117, 25, 0.5);
+}
+.home:hover ::before{
+
+} */
+
+.hedder-content1{
+text-align: right;
+}
+.hedder-content1 ul{}
+.hedder-content1 ul li{}
+.hedder-content1 ul li a{}
+
+.hedder-content ul{}
+.hedder-content ul li{
+    display: inline-block;
+    position: relative;
+}
+.hedder-content ul li a{
+    text-decoration: none;
+    display:block;
+    color: #fff;
+    line-height: 80px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0px 20px;
+}
+
+.hedder-content ul li .pages{
+    position: absolute;
+    color: #000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+
+    left: 0;
+    top: 100%;
+    width: 200px;
+    transform: scaleY(0);
+    transform-origin: top center;
+    text-align: center;
+    
+}
+
+
+.hedder-content ul li .pages li{
+   
+}
+.hedder-content ul li:hover .pages {
+        opacity: 1;
+        visibility:visible;
+        transform:scaleY(1) ;
+        z-index: 5;
+        color: rgb(161, 46, 5);
+    }
+.hedder-content ul li .pages li a{
+    color: #e38c0b;
+   
+}
+
+.hedder-content ul li .blog{
+    position: absolute;
+    color: #000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+   
+    left: 0;
+    top: 100%;
+    width: 200px;
+    transform: scaleY(0);
+    transform-origin: top center;
+    text-align: center;
+}
+.hedder-content ul li:hover .blog{
+    opacity: 1;
+    visibility:visible;
+    transform:scaleY(1) ;
+    z-index: 5;
+    color: rgb(161, 46, 5);
+}
+.hedder-content ul li .blog li{}
+.hedder-content ul li .blog li a{  color: #e38c0b;}
+
+.hedder-content ul li .layout{
+    position: absolute;
+    color: #000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    
+    left: 0;
+    top: 100%;
+    width: 200px;
+    transform: scaleY(0);
+    transform-origin: top center;
+    text-align: center;
+}
+.hedder-content ul li:hover .layout{
+    opacity: 1;
+    visibility:visible;
+    transform:scaleY(1) ;
+    z-index: 5;
+    color: rgb(161, 46, 5);
+}
+.hedder-content ul li:hover > a{
+    background: rgba(6, 120, 70,.5);
+   
+}
+.hedder-content ul li .layout li{}
+.hedder-content ul li .layout li a{  color: #e38c0b;}
+
+.benar{
+    background-image: url("https://i.postimg.cc/XqBR56Bh/ia-200000019.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    z-index: 1; 
+    position: relative;
+}
+.benar-contet{
+    color: #fff;
+   
+}
+.benar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0,.6);
+    z-index: -1;
+   
+}
+.benar-contet h1{
+font-size: 70px;
+padding-top: 50px;
+}
+.benar-contet h4{
+    padding: 20px 0px;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 50px 0px;
+
+}
+.benar-contet h4::after{
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+   
+}
+.benar-contet h4::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+   
+    
+}
+
+.benar-contet a{
+    text-decoration: none;
+    color: #fff;
+    height: 20px;
+    width: 100px;
+    background-color: goldenrod;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 50px;
+    transition: .4s;
+}
+.benar-contet a:hover{
+    background-color: black;
+}
+.team-section{
+ background-color: #f8f8f8;
+ padding: 50px 0px;
+}
+.team-section-item{
+    width: 23%;
+    margin-left: 2%;
+    background-color:#ffffff;
+}
+.team-section-item .min-img{
+    text-align: center;
+}
+.team-section-item h4{
+    padding: 10px 30px;
+}
+.team-section-item p{
+    padding: 10px 30px;
+}
+.img-content{
+    text-align: center;
+}
+.team-section-item a{
+    color: #fff;
+    background-color: #e38c0b;
+    text-decoration: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+  display: inline-block;
+  margin: 10px 30px;
+  transition: .4s;
+}
+.team-section-item a:hover{
+    background-color: blue;
+}
+.min-benar{
+    margin-top: 50px;
+}
+
+.youtube{
+    width: 55%;
+    
+}
+.content{
+    width: 40%;
+
+}
+.content h1{
+    font-size: 60px;
+   line-height: 100px;
+   width: 600px;
+}
+.content p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content a{
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    transition: .4s;
+}
+.content a:hover{
+    background-color: #e38c0b;
+}
+label{
+    color: #e38c0b;
+}
+.contect-section{
+    background-color: #f8f8f8;
+}
+.contect-content{
+    width: 50%;
+  
+}
+.contect-content h2{
+    padding-bottom: 20px;
+}
+.contect-content p{
+    padding-bottom: 30px;
+    width: 300px;
+    font-size: 15px;
+}
+.contect-content input{
+    height: 30px;
+    width: 300px;
+    background-color:#ffffff ;
+    margin-top: 20px;
+    border: none;
+    padding-left: 10px;
+}
+.contect-content textarea{
+    height: 80px;
+    width: 300px;
+    background-color: #fff;
+    border: none;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.contect-content a{
+text-decoration: none;
+color: #fff;
+background-color: aquamarine;
+display: block;
+width: 100px;
+margin-top: 20px;
+padding: 10px;
+}
+.contect-img{
+    width: 50%;
+    
+}
+.last{
+    background-color:rgba(0, 0, 0,.6) ;
+    height: 70px;
+    width: 100%;
+
+    
+}
+.content{ 
+    width: 70%;
+    margin-left: 80px;
+    color: #fff;
+}
+.sochel-menu{
+    width: 30%;
+}
+.sochel-menu{
+    text-align: center;
+    line-height: -300px;
+}
+.sochel-menu a{
+    padding-left: 30px;
+    color: #fff;
+   padding-bottom: 30px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
